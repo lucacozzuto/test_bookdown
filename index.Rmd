@@ -1,0 +1,23 @@
+---
+title: "Test-Bookdown"
+
+author:
+  - Luca Cozzuto
+
+
+site: bookdown::test-bookdown
+output: bookdown::gitbook
+documentclass: book
+biblio-style: apalike
+link-citations: yes
+---
+
+
+# Welcome
+Hi, this is my test bookdown. Here a silly R script:
+
+## A plot
+```{r echo=FALSE, warning = FALSE, message=FALSE, fig.width=7}
+a<-read.csv("data.csv")
+plot(a)
+```
